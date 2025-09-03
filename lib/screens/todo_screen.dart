@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/blocs/todo_bloc/todo_bloc.dart';
 import 'package:todo_app/blocs/todo_cubit/todo_cubit.dart';
+import 'package:todo_app/screens/login_screen.dart';
 
 class TodoScreen extends StatefulWidget {
   const TodoScreen({super.key});
@@ -11,7 +12,6 @@ class TodoScreen extends StatefulWidget {
 }
 
 class _TodoScreenState extends State<TodoScreen> {
-
   final TextEditingController _todoController = TextEditingController();
   // Life cycle
 
@@ -39,6 +39,19 @@ class _TodoScreenState extends State<TodoScreen> {
       appBar: AppBar(
         title: const Text('My Todo List'),
         backgroundColor: Colors.blue,
+        actions: [
+          // Logout Button
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => LoginScreen()),
+                (_) => false,
+              );
+            },
+          ),
+        ],
       ),
       body: Column(
         children: [
@@ -78,7 +91,7 @@ class _TodoScreenState extends State<TodoScreen> {
                             // );
 
                             context.read<TodoCubit>().deleteTodo(
-                              state.todos[index].id
+                              state.todos[index].id,
                             );
                           },
                         ),
