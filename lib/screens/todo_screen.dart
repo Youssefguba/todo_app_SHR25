@@ -58,7 +58,7 @@ class _TodoScreenState extends State<TodoScreen> {
           // Top TextField for adding new todos
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: TextField(
+            child: TextFormField(
               controller: _todoController,
               decoration: InputDecoration(
                 hintText: 'Add a new todo',
