@@ -104,7 +104,7 @@ class _TodoScreenState extends State<TodoScreen> {
               if (state is TodoInitial) {
                 return const Center(
                   child: Text(
-                    'No todos yet. Add some!, Your state is TodoInitial',
+                    'No todos yet. Your state is TodoInitial',
                   ),
                 );
               }
