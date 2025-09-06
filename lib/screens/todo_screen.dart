@@ -61,7 +61,7 @@ class _TodoScreenState extends State<TodoScreen> {
             child: TextFormField(
               controller: _todoController,
               decoration: InputDecoration(
-                hintText: 'Add a new todo',
+                hintText: 'Add todo',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

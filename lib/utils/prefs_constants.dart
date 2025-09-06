@@ -8,4 +8,8 @@ class PrefsKeys {
   static const String backupFrequency = 'backup_frequency';
   static const String lastBackupDate = 'last_backup_date';
   static const String showCompletedTasks = 'show_completed_tasks';
+  static const String defaultView = 'default_view';
 }
+
+// staging
+// committed
