@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // App Name
               const Text(
-                'Todo App',
+                'Todo',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
