@@ -1,5 +1,6 @@
 class PrefsKeys {
   static const String todos = 'todos';
+  static const String username = 'username';
   static const String themeMode = 'theme_mode';
   static const String language = 'language';
   static const String notificationsEnabled = 'notifications_enabled';
