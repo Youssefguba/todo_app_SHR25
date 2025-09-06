@@ -1,5 +1,4 @@
 # Todo App
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Youssefguba/todo_app_SHR25)
 
 This is a simple To-Do List application built with Flutter. It demonstrates core concepts such as state management using the BLoC pattern (specifically with Cubit), local data persistence, and building a reactive UI.
 
