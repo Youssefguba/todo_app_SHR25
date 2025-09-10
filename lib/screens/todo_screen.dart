@@ -38,7 +38,7 @@ class _TodoScreenState extends State<TodoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('My Todo List'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         actions: [
           // Logout Button
           IconButton(
@@ -120,7 +120,7 @@ class _TodoScreenState extends State<TodoScreen> {
           context.read<TodoCubit>().addTodo(_todoController.text);
           _todoController.clear();
         },
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         child: const Icon(Icons.add),
       ),
     );
