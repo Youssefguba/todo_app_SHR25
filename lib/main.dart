@@ -28,7 +28,21 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => TodoCubit()),
       ],
-      child: MaterialApp(home: LoginScreen()),
+      child: MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.green,
+          primaryColor: Colors.green,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.green,
+            foregroundColor: Colors.white,
+          ),
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+            backgroundColor: Colors.green,
+            foregroundColor: Colors.white,
+          ),
+        ),
+        home: LoginScreen(),
+      ),
     );
   }
 }
